@@ -1,0 +1,188 @@
+html,
+body,
+#appContainer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  /* z-index: 3; */
+}
+
+#appHeader {
+  display: flex;
+  align-items: center;
+  height: 7%;
+  padding-left: 1%;
+  background-color: #002432;
+  color: #fff;
+  text-decoration: none;
+  /* z-index: 2; */
+}
+
+#appBody {
+  display: flex;
+  width: 100%;
+  height: 95%;
+}
+
+#mapDivs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#editDiv {
+  padding: 0;
+  margin: 0;
+  /* height: 100%;
+  width: 100%;
+  flex: 1; */
+  display: flex;
+  /* overflow: scroll; */
+
+}
+
+#viewDiv,
+#viewDiv2,
+#sidePanel {
+  height: 100%;
+}
+
+#viewDiv {
+  /* height: 50%; */
+  width: 100%;
+  /* width: 30%; */
+  position: relative;
+}
+
+/* .viewFlex{
+  flex-direction: column;
+} */
+#viewDiv2 {
+  /* height: 100%; */
+  width: 100%;
+  /* width: 30%; */
+  position: relative;
+}
+
+#bakisAcisi {
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  left: 20%;
+  top: 30%;
+}
+
+#sidePanel {
+  overflow: hidden;
+  width: 50%;
+  /* width: 70%; */
+  background-color: #000;
+  font-size: 0;
+  position: relative;
+
+}
+
+
+#introMessage {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  transform: translate(0, -50%);
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.split2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.gutter {
+  background-color: #7c7d81;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
+  cursor: col-resize;
+}
+
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  cursor: row-resize;
+}
+
+#location {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  background-color: white;
+  padding: 0;
+  border-color: #00adef;
+  border-width: 3px;
+}
+
+/* #sidePanel daha önce relative yapıldıysa bu yeterli olur */
+#sidePanel {
+  position: relative !important;
+  overflow: visible;
+  /* hotspot’lar kesilmesin */
+}
+
+/* Ortalamayı JS’de eklenen .nav-arrow ve arrow-* sınıflarıyla yapıyoruz */
+.nav-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 73%;
+  /* yükseklik ayarı (ikinci resimde olduğu gibi) */
+  transform: none;
+  /* JS transform’larından kurtul */
+  z-index: 10;
+}
+
+.arrow-left {
+  left: calc(50% + 20px);
+  background-image: url("down-arrow.png");
+}
+
+.arrow-right {
+  left: calc(50% - 60px);
+  /* merkezden sola 60px */
+  background-image: url("up-arrow.png");
+}
+
+.header-logos {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 1%;
+}
+
+.header-logo {
+  height: 100%;
+  max-height: 44px;
+  object-fit: contain;
+}
+
+#loadingMsg {
+  font-size: 13px;
+}

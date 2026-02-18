@@ -1,0 +1,8 @@
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN/MapServer/2
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN/MapServer/0
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN/FeatureServer/1
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN/MapServer/3
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN_KAMU/MapServer/0
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN2/MapServer/2
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN2/MapServer/3
+https://datumglb.com/arcgis/rest/services/BALIKESIR_YAYIN2/MapServer/4

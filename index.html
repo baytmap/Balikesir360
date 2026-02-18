@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Geolab Panoramic Viewer</title>
+  <link rel="icon" type="image/png" href="/icon.png" />
+  <link rel="stylesheet" href="styleF.css" />
+  <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css" />
+  <link rel="stylesheet" href="pannellum2.css" />
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.2/split.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="https://js.arcgis.com/4.24/"></script>
+</head>
+
+
+
+<body>
+  <div id="appContainer">
+
+    <div id="appHeader">
+      <a id="appHeader" href="https://balikesir.bel.tr/" target="_blank">
+        <img id="logo" src="bbb_logo_text_white.png" style="width: 8%; height: auto; margin-right: 10px;">
+        <div style="display: inline-block;">
+          <div style="font-size: 20px; font-weight: bold;">BAYES</div>
+          <div style="font-size: 11px; line-height: 1.2;">BALIKESİR YAPI ENVANTER SİSTEMİ</div>
+        </div>
+      </a>
+
+      <div class="header-logos">
+        <a href="http://kentgelisim.com.tr/" target="_blank">
+          <img src="kentgelisim2.png" class="header-logo" alt="Kent Gelişim">
+        </a>
+        <!-- <a href="http://geolabgis.com" target="_blank">
+          <img src="GeolabLogoD.png" class="header-logo" alt="Geolab">
+        </a> -->
+
+        <img src="G360.png" class="header-logo" alt="G360">
+
+      </div>
+
+    </div>
+
+
+    <div id="appBody" class="split">
+      <!-- <div id="editDiv"></div> -->
+      <div id="editDiv" style="display:none; overflow:auto; width:300px; background:#fff;"></div>
+
+      <div id="loadingMsg" style="
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff8dc;
+    color: #333;
+    padding: 10px 20px;
+    z-index: 9999;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+  ">
+        Yükleniyor...
+      </div>
+
+
+      <div id="viewDiv" class="viewSinir">
+        <button id="location" class="esri-widget--button-active"> <img src="location.png" alt=""
+            title="Seçili Noktaya Git"></button>
+      </div>
+
+      <div id="sidePanel">
+
+        <span id="introMessage">
+          Click a point on the map.
+        </span>
+        <div>
+        </div>
+      </div>
+      <div id="zoomWarning" style="
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(33, 248, 248, 0.75);
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  z-index: 10000;
+  display: none;
+  font-family: sans-serif;
+">
+        📍 Noktaları Görüntülemek İçin Lütfen Haritaya Yaklaşınız!
+      </div>
+
+      <script type="text/javascript" src="pannellum.js"></script>
+      <script type="text/javascript" src="pv360.js"></script>
+      <!-- <script src="widgetE.js"></script> -->
+      <!-- <script src="addLayer.js"></script> -->
+
+</body>
+
+</html>

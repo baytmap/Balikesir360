@@ -1,0 +1,2 @@
+
+https://datumglb.com/arcgis/rest/services/BALIKESIR_360_NOKTA/MapServer/0
